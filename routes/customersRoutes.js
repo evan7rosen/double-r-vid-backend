@@ -4,14 +4,14 @@ const Customer = require("../models/Customer");
 
 router.get("/", (req, res) => {
   Customer.query()
-    .eager("tee_times")
+    .eager("videos")
     .then(result => res.send(result));
 });
 
 router.get("/:id", (req, res) => {
   Customer.query()
     .findById(req.params.id)
-    .eager("tee_times")
+    .eager("videos")
     .then(result => res.json(result));
 });
 

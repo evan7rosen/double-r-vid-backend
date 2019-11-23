@@ -15,7 +15,7 @@ class Video extends Model {
           from: "videos.id",
           through: {
             // customers_videos is the join table.
-            from: "customers_videos.tee_time_id",
+            from: "customers_videos.video_id",
             to: "customers_videos.customer_id"
           },
           to: "customers.id"
