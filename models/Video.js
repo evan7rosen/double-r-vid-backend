@@ -38,4 +38,4 @@ class Video extends Model {
   }
 }
 
-module.exports = Tee_time;
+module.exports = Video;
